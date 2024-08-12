@@ -17,25 +17,25 @@ const Home = ({ str }) => {
         className="d-flex gap-3 justify-content-center"
         style={{ fontSize: "60px" }}
       >
-        <span className="border border-secondary p-2">
+        <span className="border border-secondary p-4 rounded">
           <i className="fa-solid fa-clock"></i>
         </span>
-        <span className="border border-secondary p-2 rounded">
+        <span className="border border-secondary p-4 rounded">
           {str.at(-6) ?? "0"}
         </span>
-        <span className="border border-secondary p-2 rounded">
+        <span className="border border-secondary p-4 rounded">
           {str.at(-5) ?? "0"}
         </span>
-        <span className="border border-secondary p-2 rounded">
+        <span className="border border-secondary p-4 rounded">
           {str.at(-4) ?? "0"}
         </span>
-        <span className="border border-secondary p-2 rounded">
+        <span className="border border-secondary p-4 rounded">
           {str.at(-3) ?? "0"}
         </span>
-        <span className="border border-secondary p-2 rounded">
+        <span className="border border-secondary p-4 rounded">
           {str.at(-2) ?? "0"}
         </span>
-        <span className="border border-secondary p-2 rounded">
+        <span className="border border-secondary p-4 rounded">
           {str.at(-1)}
         </span>
       </div>
