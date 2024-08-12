@@ -18,7 +18,7 @@ const Home = ({ str }) => {
         style={{ fontSize: "60px" }}
       >
         <span className="border border-secondary p-4 rounded">
-          <i className="fa-solid fa-clock"></i>
+          <div className="fa-solid fa-clock"></div>
         </span>
         <span className="border border-secondary p-4 rounded">
           {str.at(-6) ?? "0"}
