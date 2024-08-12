@@ -4,23 +4,43 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+
+const Home = ({ str }) => {
+  console.log(typeof str);
+  return (
+    <main
+      className="text-white d-flex flex-column justify-content-center align-items-center gap-2"
+      style={{ backgroundColor: "#09222e", height: "100vh" }}
+    >
+      <h1 className="text-center m-0">Contador</h1>
+      <div
+        className="d-flex gap-3 justify-content-center"
+        style={{ fontSize: "60px" }}
+      >
+        <span className="border border-secondary p-2">
+          <i className="fa-solid fa-clock"></i>
+        </span>
+        <span className="border border-secondary p-2 rounded">
+          {str.at(-6) ?? "0"}
+        </span>
+        <span className="border border-secondary p-2 rounded">
+          {str.at(-5) ?? "0"}
+        </span>
+        <span className="border border-secondary p-2 rounded">
+          {str.at(-4) ?? "0"}
+        </span>
+        <span className="border border-secondary p-2 rounded">
+          {str.at(-3) ?? "0"}
+        </span>
+        <span className="border border-secondary p-2 rounded">
+          {str.at(-2) ?? "0"}
+        </span>
+        <span className="border border-secondary p-2 rounded">
+          {str.at(-1)}
+        </span>
+      </div>
+    </main>
+  );
 };
 
 export default Home;
