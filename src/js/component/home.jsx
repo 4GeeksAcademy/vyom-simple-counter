@@ -39,6 +39,7 @@ const Home = ({ str }) => {
           {str.at(-1)}
         </span>
       </div>
+      <div>Vyom | Dunk | Amat</div>
     </main>
   );
 };

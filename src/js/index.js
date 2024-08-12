@@ -16,7 +16,6 @@ function counter() {
   count++;
   let str = count.toString();
   // console.log(count);
-  // Usa el root existente para renderizar el componente
   root.render(<Home str={str} />);
 }
 
